@@ -1,18 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
+
+<head>
+    <title>Atividade 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>HTML Forms</h2>
+    <h2>Talento Tech</h2>
+    <p>Olá, meu nome é Jean Yuji Ito. Atualmente, estou participando do programa "Talento Tech", onde foi proposta uma atividade para que falássemos um pouco sobre nós mesmos.</p>
+    <p>Sou do interior do Paraná e estou achando o curso muito interessante. Está sendo uma experiência enriquecedora para o meu aprendizado e crescimento na área de tecnologia.</p>
 
-<form action="teste.html">
-  <label for="fname">Nome:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Sobrenome:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Confirmar">
-</form> 
+    <header>
+        <h2>Cidade</h2>
+    </header>
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Santa Cecíia do Pavão</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            
+            <p>Santa Cecília do Pavão é uma pequena cidade no interior do Paraná, conhecida pela tranquilidade e pelas paisagens naturais.</p>
+            <p>A economia é baseada na agricultura, e o povo é simpático e receptivo. É um lugar calmo e ideal para quem gosta da vida no campo.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
 
 </body>
+
 </html>
